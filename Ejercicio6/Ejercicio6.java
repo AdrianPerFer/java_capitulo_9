@@ -9,12 +9,18 @@ package Ejercicio6;
  * de tiempo de la forma 10h 35m 5s. Si se suman por ejemplo 30m 40s y 35m 20s el
  * resultado debería ser 1h 6m 0s. Realiza un programa de prueba para comprobar
  * que la clase funciona bien.
-
  * 
  * @author Adrián Perogil Fernández
  * 
  */
 
 public class Ejercicio6 {
-    
+    public static void main(String[] args) {
+        Tiempo t1 = new Tiempo(1, 20, 30);
+        Tiempo t2 = new Tiempo(0, 30, 40);
+        Tiempo t3 = new Tiempo(0, 35, 20);
+
+        System.out.println(t1.suma(t3));
+        System.out.println(t1.resta(t2));
+    }
 }
